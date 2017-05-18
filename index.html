@@ -11,14 +11,29 @@
 		padding: 0;
 	}
 
-	body {
-		/* background-image: url("http://i.dailymail.co.uk/i/pix/2012/10/16/article-2218437-158683C0000005DC-301_638x409.jpg"); */
+	.background {
+		width: 100vw;
+		height: 100vh;
+		background-color: black;
+/*		background-image: url("http://i.dailymail.co.uk/i/pix/2012/10/16/article-2218437-158683C0000005DC-301_638x409.jpg");
+		background-size: 100% 100%;
+		-webkit-filter: grayscale(1) invert(1) contrast(5);
+  		filter: grayscale(1) invert(1) contrast(5); */
+  		z-index: 1;
+	}
+
+	.sand {
+		top: 36vh;
+		position: absolute;
+		display: block;
+		padding: 0 auto;
+		text-align: center;
+		width: 100vw;
 	}
 
 	p {
-		padding-top: 40vh;
 		padding-bottom: 10px;
-		color: red;
+		color: white;
 		text-align: center;
 		font-size: 10px;
 		letter-spacing: 3px;
@@ -37,7 +52,10 @@
 	}
 </style>
 <body>
-	<p>— PROUDLY SERVING —</p>
-	<a href="http://instagram.com/sandwihces"><img src="s.png"/></a>
+	<div class="background"></div>
+	<div class="sand">
+		<p>— PROUDLY SERVING —</p>
+		<a href="http://instagram.com/sandwihces"><img src="s3.png"/></a>
+	</div>
 </body>
 </html>
